@@ -23,29 +23,28 @@ Sample_size=k;
 Feature_size=f;
 
 For each classifier as i: 
-For each ranking method as j:
+	For each ranking method as j:
 
-# n is between 1 and f (could set the interval if f is too large)
-For the number of top features I selected as n:   
-# 10-fold should be considered if k is too large 
-For each training data and test data in Leave-One-Out CV as TrainData and TestData:   
-# rank features
-FeaturesRank =Rank Features in TrainData by j;
-#select top n features after ranking
-Top_features= FeaturesRank(1:n);
-# set classifier 
-Classifier=i; 
-# use feature subset to train classifier 
-Model=Classifier.train(TrainData(Top_features)); 
-# Predict the Test dataset label
-Label= Model.Predict(TestData);   
-       			Save(Label);
-             		End
-		# we also can get confusion matrix, recall, AUC etc. here
-Accuracy_i_j_n=correct_predction_for_all_cross_validation/k;
-End
-End
-   End
+		# n is between 1 and f (could set the interval if f is too large)
+		For the number of top features I selected as n:   
+			# 10-fold should be considered if k is too large 
+			For each training data and test data in Leave-One-Out CV as TrainData and TestData:   
+				# rank features
+				FeaturesRank =Rank Features in TrainData by j;
+				#select top n features after ranking
+				Top_features= FeaturesRank(1:n);
+				# set classifier 
+				Classifier=i; 
+				# use feature subset to train classifier 
+				Model=Classifier.train(TrainData(Top_features)); 
+				# Predict the Test dataset label
+				Label= Model.Predict(TestData);   
+				Save(Label);
+			End
+			# we also can get confusion matrix, recall, AUC etc. here
+			Accuracy_i_j_n=correct_predction_for_all_cross_validation/k;
+		End
+	End
 End
 ```
 
