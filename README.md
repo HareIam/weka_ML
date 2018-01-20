@@ -7,7 +7,7 @@ Ranking methods:
 2. ChiSquaredAttributeEval
 3. SVMAttributeEval
 
-Classification method:
+Classifier:
 1. SVM
 2. MultilayerPerceptron
 3. Logistic
