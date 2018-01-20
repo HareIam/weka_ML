@@ -52,7 +52,7 @@ Finally, we can compare all the accuracies, and choose the highest one.
 
 ## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. 
 
 ## Prerequisites
 
@@ -62,7 +62,11 @@ Import Weka packages (Detail pls see: https://weka.wikispaces.com/Use+WEKA+in+yo
 
 ## Running the tests
 
+Import your data in ./data/yourdata.csv (The fromat should be same)
+
 Run the ./src/weka_Main/ClassifierTest.java
+
+Result will be written in ./result/Result.txt 
 
 ## Authors
 
