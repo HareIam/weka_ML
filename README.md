@@ -1,6 +1,18 @@
-# Project Title
+# Classification under feature selection
 
 Classification tasks using different classfiers and feature ranking methods
+
+Ranking methods:
+1. ReliefFAttributeEval
+2. ChiSquaredAttributeEval
+3. SVMAttributeEval
+
+Classification method:
+1. SVM
+2. MultilayerPerceptron
+3. Logistic
+4. NaiveBayesMultinomial
+5. KNN
 
 ## Getting Started
 
