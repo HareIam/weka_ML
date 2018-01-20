@@ -1,4 +1,4 @@
-# Classification under feature selection
+# Classification based on weka
 
 Classification tasks using different classfiers and feature ranking methods
 
@@ -20,8 +20,8 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### Prerequisites
 
-Instill Eclipse
-Import Weka packages (Detail to see: https://weka.wikispaces.com/Use+WEKA+in+your+Java+code)
+Install Eclipse
+Import Weka packages (Detail pls see: https://weka.wikispaces.com/Use+WEKA+in+your+Java+code)
 
 
 ## Running the tests
