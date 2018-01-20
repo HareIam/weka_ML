@@ -72,7 +72,7 @@ Result will be written in ./result/Result.txt
 
 XU SHIHAO 
 
-##URL
+## URL
 https://github.com/HareIam/weka_ML
 
 
